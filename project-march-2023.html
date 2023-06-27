@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="styling.css" type = "text/css">
+		<link rel="shortcut icon" type="image/png" href="ECIcon.png">
+		<title> Eoin Cotter | March 2023 Project</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&display=swap" rel="stylesheet">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	</head>
+	<body>
+		<header>
+			<a href = "index.html" class = "no-underline"> <p> HOME </p> </a>
+			<a href = "projects.html" class = "no-underline"> <p> PROJECTS </p> </a> 
+		</header>
+		<section>
+			<h1> March 2023 | Create a Portfolio Website </h1>
+			<p> 
+				The aim of this project was to develop a portfolio website to document and present my self-guided analytics projects. 
+				I initially planned to use a website builder such as WordPress or Wix but, having tried them out and researched costs, 
+				instead I decided to develop the site from scratch using HTML and CSS. I’m not a web developer but I do have some background in web development 
+				through a university module and some self-guided study. While this project isn’t strictly data or behavioural science, 
+				I have decided to include it as part of my portfolio because it demonstrates some transferrable skills, 
+				and web development knowledge is certainly useful to have in any data role. Below I outline the steps I took to complete the project.
+			</p>
+			<h3> Contents </h3>
+			<ul>
+				<li><a href=#section-one> Purchase a domain name </a></li>
+				<li><a href=#section-two> Add Home page content with HTML </a></li>
+				<li><a href=#section-three> Add styling with CSS </a></li>
+				<li><a href=#section-four> Add Projects page </a></li>
+				<li><a href=#section-five> Find a host and publish </a></li>
+			</ul>
+			</p>
+			<h3 id="section-one"> Purchase a domain name </h3>
+			<h3 id="section-two"> Add Home page content with HTML </h3>
+			<p>
+				As a starting point I wanted the website to contain two main pages: Home and Projects. 
+				The Home page should provide a brief introduction to myself and provide links to my CV and professional social media pages. 
+				The Projects page should provide a list of my projects with a brief description and a link to the full project report. 
+				The first step to achieve this was to add the basic content (text, images) using HTML. Using Notepad++ as my code editor, 
+				I first created index.html as the homepage, starting with empty <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> elements.
+			</p>
+			<pre>
+			<code>
+ &lt;html&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+ &lt;/html&gt;
+			</code>
+			</pre>
+			<p>
+			I then added a webpage title to <code>&lt;head&gt;</code>, which appears on search results and on the browser tab when the page is opened.
+			</p>
+			<pre>
+			<code>
+ &lt;head&gt;
+    &lt;title&gt; Eoin Cotter &lt;/title&gt;
+ &lt;/head&gt;
+			</code>
+			</pre>
+			<p>
+			Next I added a header into <code>&lt;body&gt;</code> which will act as a navigation bar with links to each of two main pages.
+			</p>
+			<pre>
+			<code>
+ &lt;body&gt;
+    &lt;header&gt;
+        &lt;a href = "index.html" class = "no-underline" class="current-page"&gt; &lt;p&gt; HOME &lt;/p&gt; &lt;/a&gt;
+        &lt;a href = "projects.html" class = "no-underline"&gt; &lt;p&gt; PROJECTS &lt;/p&gt; &lt;/a&gt; 
+    &lt;/header&gt;
+ &lt;/body&gt;
+			</code>
+			</pre>
+			<p>
+			I then added a <code>&lt;section&gt;</code> element to the <code>&lt;body&gt;</code> which contains the main content for the page. For the Home page, 
+			the main content includes a heading with my name, a paragraph with information about me, and image links to my CV and professional social media pages.
+			</p>
+			<pre>
+			<code>
+ &lt;section&gt;
+    &lt;h1&gt; Eoin Cotter | Data & Behavioural Science &lt;/h1&gt;
+    &lt;h4&gt; Melbourne, VIC &lt;/h4&gt;
+    &lt;p&gt; I hold a Bachelor of Commerce, a Masters in Business Analytics, and a Higher Diploma in Psychology. I’m interested in using a scientific, 
+	data-driven approach to gain insights into the world around me, especially human behaviour. This website documents my efforts to become better at doing so through self-guided projects.&lt;/p&gt;
+    &lt;a href="https://www.linkedin.com/in/eoinwcotter/"&gt; &lt;img src="LinkedinIcon.png" alt="LinedIn Icon" width="30px" height="30px"&gt; &lt;/a&gt;
+    &lt;a href="https://github.com/eoincotter"&gt; &lt;img src="GithubIcon.png" alt="GitHub Icon" width="30px" height="30px"&gt; &lt;/a&gt;
+    &lt;a href="cv.pdf"&gt; &lt;img src="CV.png" alt="CV Icon" width="30px" height="30px"&gt; &lt;/a&gt;
+ &lt;/section&gt;
+			</code>
+			</pre>
+			<p>
+			And that completed the content for the home page. The next task was to add styling with CSS.
+			</p>
+			<h3 id="section-three"> Add styling with CSS </h3>
+			<p>
+			To begin styling I created a blank css file, styling.css, and linked it to index.html by adding the below <code>&lt;link&gt;</code> element to <code>&lt;head&gt;</code>.
+			</p>
+			<pre>
+			<code>
+&lt;link rel="stylesheet" href="styling.css" type = "text/css"&gt;
+			</code>
+			</pre>
+			<h3 id="section-four"> Add Projects page </h3>
+			<h3 id="section-five"> Find a host and publish </h3>
+		</section>
+		<footer>
+		</footer>
+	</body>
+</html>
